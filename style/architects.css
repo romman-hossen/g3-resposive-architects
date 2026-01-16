@@ -1,4 +1,9 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
 
+} */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
@@ -33,8 +38,10 @@
 main >section{
     margin-top: 130px;
 }
-
-
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+ }
 
 /* header style */
 
@@ -98,27 +105,93 @@ main >section{
     max-width: 537px;
  }
  
- .f-title{
-    font-size: 2.8rem;
-    font-weight: 700;
- }
  #quik-list{
     font-weight: 500;
  }
  .f-last{
     color: #FF900E;
  }
+ /* facts related style */
+ .facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+ }
+ .facts-box{
+    margin-top: 100px;
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+ }
+ .fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top:9px;
+    margin-bottom: 5px;
+    color: #424242;
+ }
+ .fact-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 5px;
+ }
+
+ /* sponsor-section style */
+ .sponsor-content{
+    max-width: 542px;
+    text-align: center;
+    margin: 50px auto;
+ }
+ .sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 155px;
+ }
+ .sponsor-company img{
+    filter: grayscale(100%);
+ }
+
+
+
  
 /* Responsive media query */
 @media screen and (max-width:576px) {
     .navbar,
     .nav-links,
-    .features{
+    .features
+    {
         flex-direction: column;
     }
     .f-img-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .facts-container,
+    .sponsor-company{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .sponsor-company{
+        row-gap: 60px;
+    }
+
+    
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .features{
+        flex-direction: column;
+    }
+    .facts-container,
+    .sponsor-company{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    
     
 }
 
