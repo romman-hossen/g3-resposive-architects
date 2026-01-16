@@ -30,6 +30,10 @@
 .bg-header{
     background-color: rgba(255, 144, 14, 0.1);
 }
+main >section{
+    margin-top: 130px;
+}
+
 
 
 /* header style */
@@ -55,7 +59,7 @@
     font-size: 1.2rem;
     line-height: 26px;
 }
-.navbar,.banner{
+.navbar,.banner,main{
     max-width: 75%;
     margin: 0 auto;
 }
@@ -75,13 +79,45 @@
     width: 100%;
     margin-bottom: 45px;
 }
-/* main style */
+ /* main style  */
 
+/* team and features relates design */
 
+ .features{
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+
+ }
+ .f-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+ }
+ .f-content{
+    max-width: 537px;
+ }
+ 
+ .f-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+ }
+ #quik-list{
+    font-weight: 500;
+ }
+ .f-last{
+    color: #FF900E;
+ }
+ 
 /* Responsive media query */
 @media screen and (max-width:576px) {
-    .navbar,.nav-links{
+    .navbar,
+    .nav-links,
+    .features{
         flex-direction: column;
+    }
+    .f-img-container{
+        grid-template-columns: repeat(1,1fr);
     }
     
 }
