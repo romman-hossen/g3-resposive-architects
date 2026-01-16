@@ -186,13 +186,23 @@ main >section,footer{
  .sponsor-company{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 155px;
+    gap: 140px;
  }
  .sponsor-company img{
     filter: grayscale(100%);
  }
  /* footer section */
- 
+ footer{
+
+ }
+ .foot-info{
+    text-align: center;
+    padding: 38px 0;
+    font-size: 1.25em;
+    border-radius: 8px;
+ }
+
+
 
 
 
