@@ -240,19 +240,31 @@ main >section,footer{
         max-width: 100%;
     }
 
-
-
     
 }
 @media screen and (min-width:577px) and (max-width:992px) {
-    .features{
+    .features,
+    .a-feature{
         flex-direction: column;
     }
     .facts-container,
     .sponsor-company{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-    }   
+    } 
+     .architect-img{
+        width: 100%;
+    }
+     .b-title{
+    font-size: 2.8rem;
+   }
+    #u-btn{
+    font-size: 1.5rem;
+    padding: 30px;
+    margin-top:50px ;
+    margin-left:0 ;
+    /* border-radius: 50%; */
+   }  
 }
 
 
